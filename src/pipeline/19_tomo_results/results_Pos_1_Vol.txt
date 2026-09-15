@@ -1,0 +1,268 @@
+Discussion:
+-->
+
+
+Tomo Position_1 has 241 template matching picks
+
+-------------------------> Results with radius 20
+--> Filter no intersections => for all intersections
+Results of analysis: TP = 107, FP = 1933, FN = 18
+File Position_1_Vol.nii has F1 score: 0.09884526558891454
+
+____
+Results of analysis: TP = 107, FP = 1933, FN = 134
+File Position_1_Vol.nii has F1 score: 0.09381850065760632
+____
+
+--> Filter Arp23 intersections with tolerance 5
+Results of analysis: TP = 8, FP = 30, FN = 207
+File Position_1_Vol.nii has F1 score: 0.06324110671936758
+
+____
+Results of analysis: TP = 8, FP = 30, FN = 233
+File Position_1_Vol.nii has F1 score: 0.05734767025089606
+____
+
+--> Filter Arp23 intersections with tolerance 10
+Results of analysis: TP = 32, FP = 133, FN = 131
+File Position_1_Vol.nii has F1 score: 0.1951219512195122
+
+____
+Results of analysis: TP = 32, FP = 133, FN = 209
+File Position_1_Vol.nii has F1 score: 0.15763546798029557
+____
+
+--> Filter Arp23 intersections with tolerance 15
+Results of analysis: TP = 56, FP = 334, FN = 82
+File Position_1_Vol.nii has F1 score: 0.21212121212121213
+
+____
+
+____
+
+--> Filter Arp23 intersections with tolerance 20
+Results of analysis: TP = 71, FP = 681, FN = 46
+File Position_1_Vol.nii has F1 score: 0.16340621403912542
+
+____
+
+____
+
+--> Filter Arp23 intersections with tolerance 25
+Results of analysis: TP = 79, FP = 844, FN = 41
+File Position_1_Vol.nii has F1 score: 0.15148609779482264
+
+____
+
+____
+
+--> Filter Arp23 intersections with tolerance 30
+Results of analysis: TP = 82, FP = 883, FN = 40
+File Position_1_Vol.nii has F1 score: 0.15087396504139836
+
+____
+
+____
+
+--> Filter Arp23 intersections with tolerance 35
+Results of analysis: TP = 82, FP = 907, FN = 40
+File Position_1_Vol.nii has F1 score: 0.1476147614761476
+
+____
+
+____
+
+# check with next if observation of no more matches to tm-ed results stays true
+--> Filter Arp23 intersections with tolerance 40
+Results of analysis: TP = 82, FP = 926, FN = 38
+File Position_1_Vol.nii has F1 score: 0.1453900709219858
+
+____
+
+____
+
+
+===> the other ones are by random/accident found... mot angle specific 
+
+--> if still higher, then we continue examining until it starts to drop
+--> is there a maximum of tolerance? There should be, angles are 
+
+ToDo: check if other files have the same observation...!
+
+ToDo: discuss with Amelie about workflow questions and what is done otherwise
+ToDo: discuss with Tom about the way he transforms the data from the paper to match Joel's coordinates???
+	Also why _2 files?
+	Also what do the numbers indicate?
+	Is the description in the podosome paper enogh to understand how the data has been generated? 
+
+
+
+-------------------------> Results with radius 25
+--> Filter no intersections => for all intersections
+Results of analysis: TP = 131, FP = 1909, FN = 18
+File Position_1_Vol.nii has F1 score: 0.11968935587026039
+
+--> Filter Arp23 intersections with tolerance 5
+Results of analysis: TP = 12, FP = 26, FN = 207
+File Position_1_Vol.nii has F1 score: 0.0933852140077821
+
+--> Filter Arp23 intersections with tolerance 10
+Results of analysis: TP = 40, FP = 125, FN = 131
+File Position_1_Vol.nii has F1 score: 0.23809523809523808
+
+--> Filter Arp23 intersections with tolerance 15
+Results of analysis: TP = 67, FP = 323, FN = 82
+File Position_1_Vol.nii has F1 score: 0.24860853432282004
+
+--> Filter Arp23 intersections with tolerance 20
+Results of analysis: TP = 90, FP = 662, FN = 46
+File Position_1_Vol.nii has F1 score: 0.20270270270270271
+
+--> Filter Arp23 intersections with tolerance 25
+Results of analysis: TP = 97, FP = 826, FN = 41
+File Position_1_Vol.nii has F1 score: 0.1828463713477851
+
+--> Filter Arp23 intersections with tolerance 30
+Results of analysis: TP = 99, FP = 866, FN = 40
+File Position_1_Vol.nii has F1 score: 0.1793478260869565
+
+--> Filter Arp23 intersections with tolerance 35
+Results of analysis: TP = 99, FP = 890, FN = 40
+File Position_1_Vol.nii has F1 score: 0.17553191489361702
+
+--> Filter Arp23 intersections with tolerance 40
+Results of analysis: TP = 99, FP = 909, FN = 38
+File Position_1_Vol.nii has F1 score: 0.17292576419213973
+
+--> again same observation of no more TPs after tolerance 30
+--> however, slightly higher values
+
+
+-------------------------> Results with radius 30
+--> Filter no intersections => for all intersections
+Results of analysis: TP = 151, FP = 1889, FN = 18
+File Position_1_Vol.nii has F1 score: 0.13671344499773652
+
+--> Filter Arp23 intersections with tolerance 5
+Results of analysis: TP = 14, FP = 24, FN = 207
+File Position_1_Vol.nii has F1 score: 0.10810810810810811
+
+--> Filter Arp23 intersections with tolerance 10
+Results of analysis: TP = 48, FP = 117, FN = 131
+File Position_1_Vol.nii has F1 score: 0.27906976744186046
+
+--> Filter Arp23 intersections with tolerance 15
+Results of analysis: TP = 82, FP = 308, FN = 82
+File Position_1_Vol.nii has F1 score: 0.296028880866426
+
+--> Filter Arp23 intersections with tolerance 20
+Results of analysis: TP = 107, FP = 645, FN = 46
+File Position_1_Vol.nii has F1 score: 0.23646408839779007
+
+--> Filter Arp23 intersections with tolerance 25
+Results of analysis: TP = 114, FP = 809, FN = 41
+File Position_1_Vol.nii has F1 score: 0.21150278293135436
+
+--> Filter Arp23 intersections with tolerance 30
+Results of analysis: TP = 119, FP = 846, FN = 40
+File Position_1_Vol.nii has F1 score: 0.2117437722419929
+
+--> Filter Arp23 intersections with tolerance 35
+Results of analysis: TP = 119, FP = 870, FN = 40
+File Position_1_Vol.nii has F1 score: 0.2073170731707317
+
+--> Filter Arp23 intersections with tolerance 40
+Results of analysis: TP = 119, FP = 889, FN = 38
+File Position_1_Vol.nii has F1 score: 0.20429184549356222
+
+--> same observations
+
+-------------------------> Results with radius 35
+--> Filter no intersections => for all intersections
+Results of analysis: TP = 175, FP = 1865, FN = 18
+File Position_1_Vol.nii has F1 score: 0.15673981191222572
+
+--> Filter Arp23 intersections with tolerance 5
+Results of analysis: TP = 20, FP = 18, FN = 207
+File Position_1_Vol.nii has F1 score: 0.1509433962264151
+
+--> Filter Arp23 intersections with tolerance 10
+Results of analysis: TP = 59, FP = 106, FN = 131
+File Position_1_Vol.nii has F1 score: 0.3323943661971831
+
+--> Filter Arp23 intersections with tolerance 15
+Results of analysis: TP = 96, FP = 294, FN = 82
+File Position_1_Vol.nii has F1 score: 0.3380281690140845
+
+--> Filter Arp23 intersections with tolerance 20
+Results of analysis: TP = 128, FP = 624, FN = 46
+File Position_1_Vol.nii has F1 score: 0.27645788336933047
+
+--> Filter Arp23 intersections with tolerance 25
+Results of analysis: TP = 135, FP = 788, FN = 41
+File Position_1_Vol.nii has F1 score: 0.2456778889899909
+
+--> Filter Arp23 intersections with tolerance 30
+Results of analysis: TP = 142, FP = 823, FN = 40
+File Position_1_Vol.nii has F1 score: 0.24760244115082825
+
+--> Filter Arp23 intersections with tolerance 35
+Results of analysis: TP = 143, FP = 846, FN = 40
+File Position_1_Vol.nii has F1 score: 0.2440273037542662
+
+--> Filter Arp23 intersections with tolerance 40
+Results of analysis: TP = 145, FP = 863, FN = 38
+File Position_1_Vol.nii has F1 score: 0.2434928631402183
+
+# extra
+--> Filter Arp23 intersections with tolerance 45
+Results of analysis: TP = 146, FP = 879, FN = 36
+File Position_1_Vol.nii has F1 score: 0.24192212096106047
+
+--> didn't observe the same trend as with the thresholds of 20, 25, 30...
+
+
+-------------------------> Results with radius 50
+--> Filter no intersections => for all intersections
+Results of analysis: TP = 213, FP = 1827, FN = 18
+File Position_1_Vol.nii has F1 score: 0.18758256274768825
+
+--> Filter Arp23 intersections with tolerance 5
+Results of analysis: TP = 27, FP = 11, FN = 207
+File Position_1_Vol.nii has F1 score: 0.19852941176470587
+
+--> Filter Arp23 intersections with tolerance 10
+Results of analysis: TP = 80, FP = 85, FN = 131
+File Position_1_Vol.nii has F1 score: 0.425531914893617
+
+--> Filter Arp23 intersections with tolerance 15
+Results of analysis: TP = 132, FP = 258, FN = 82
+File Position_1_Vol.nii has F1 score: 0.4370860927152318
+
+--> Filter Arp23 intersections with tolerance 20
+Results of analysis: TP = 173, FP = 579, FN = 46
+File Position_1_Vol.nii has F1 score: 0.35633367662203913
+
+--> Filter Arp23 intersections with tolerance 25
+Results of analysis: TP = 180, FP = 743, FN = 41
+File Position_1_Vol.nii has F1 score: 0.3146853146853147
+
+--> Filter Arp23 intersections with tolerance 30
+Results of analysis: TP = 184, FP = 781, FN = 40
+File Position_1_Vol.nii has F1 score: 0.30950378469301937
+
+--> Filter Arp23 intersections with tolerance 35
+Results of analysis: TP = 185, FP = 804, FN = 40
+File Position_1_Vol.nii has F1 score: 0.30477759472817134
+
+--> Filter Arp23 intersections with tolerance 40
+Results of analysis: TP = 187, FP = 821, FN = 38
+File Position_1_Vol.nii has F1 score: 0.3033252230332522
+
+# extra
+--> Filter Arp23 intersections with tolerance 45
+Results of analysis: TP = 190, FP = 835, FN = 36
+File Position_1_Vol.nii has F1 score: 0.3037569944044764
+
+
+

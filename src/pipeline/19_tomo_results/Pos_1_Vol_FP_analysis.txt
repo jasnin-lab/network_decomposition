@@ -1,0 +1,42 @@
+Discussion: 
+- many filaments crossing near each other at ~70°
+
+
+Measurements with morphological closing ball of radius 2:
+Results of analysis: TP = 56, FP = 334, FN = 185
+File Position_1_Vol.nii has F1 score: 0.1774960380348653
+For correctness check, all predicted are 390
+For correctness check, all reference are 241
+
+--------------------- Detailed visual observation
+Reasons for FP: 
+-> Close passing individual filament, whose segmentation has been connected and a non-existing intersection has been predicted
+Examples: (175, 220, 376)
+228
+
+often 1-2 voxels between them
+
+
+-> strange, 2 filaments connected by segmentation
+(185, 792, 123)
+(192, 650, 60)
+(194, 633, 54)
+(204, 231, 474)
+(205, 336, 159)
+106
+
+
+Measurements with morphological closing ball of radius 1:
+Results of analysis: TP = 48, FP = 267, FN = 193
+File Position_1_Vol.nii has F1 score: 0.17266187050359713
+For correctness check, all predicted are 315
+For correctness check, all reference are 241
+
+
+Measurements without morphological closing:
+Results of analysis: TP = 41, FP = 239, FN = 200
+File Position_1_Vol.nii has F1 score: 0.15738963531669867
+For correctness check, all predicted are 280
+For correctness check, all reference are 241
+
+--> F1 score is even worse...

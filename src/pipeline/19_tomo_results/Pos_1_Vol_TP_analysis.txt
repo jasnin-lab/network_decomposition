@@ -1,0 +1,510 @@
+--> Discussion and Observations: 
+For the Good cases - the small z-shift is drifted towards the branching daughter filament, while the segmentation-based result is more toward the mother filament
+Very often the intersection is 1-4 slices after the template-matched one - much more into the daughter filament, while the predicted ones are located mostly on the mother filament
+
+
+###########################################################################################################
+########################## Ball Radius 2; angle tolerance 15; match threshold 20 ##########################
+########################################### Overall 56 TP matches #########################################
+###########################################################################################################
+
+
+Predicted: (75.00, 85.00, 210.00)  -->  Reference: (78.00, 86.00, 208.00)  |  Distance: 3.74
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (280.00, 59.00, 188.00)  -->  Reference: (278.00, 61.00, 185.00)  |  Distance: 4.12
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (641.00, 569.00, 223.00)  -->  Reference: (641.00, 573.00, 221.00)  |  Distance: 4.47
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (367.00, 465.00, 251.00)  -->  Reference: (370.00, 463.00, 248.00)  |  Distance: 4.69
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (241.00, 138.00, 207.00)  -->  Reference: (238.00, 140.00, 204.00)  |  Distance: 4.69
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (638.00, 73.00, 224.00)  -->  Reference: (636.00, 75.00, 220.00)  |  Distance: 4.90
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (544.00, 596.00, 288.00)  -->  Reference: (540.00, 594.00, 286.00)  |  Distance: 4.90
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (621.00, 136.00, 204.00)  -->  Reference: (622.00, 139.00, 200.00)  |  Distance: 5.10
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (634.00, 431.00, 271.00)  -->  Reference: (637.00, 435.00, 269.00)  |  Distance: 5.39
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (901.00, 588.00, 209.00)  -->  Reference: (903.00, 593.00, 210.00)  |  Distance: 5.48
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (715.00, 939.00, 307.00)  -->  Reference: (717.00, 934.00, 305.00)  |  Distance: 5.74
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (348.00, 391.00, 276.00)  -->  Reference: (349.00, 387.00, 272.00)  |  Distance: 5.74
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (221.00, 712.00, 244.00)  -->  Reference: (223.00, 710.00, 239.00)  |  Distance: 5.74
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (718.00, 622.00, 308.00)  -->  Reference: (714.00, 619.00, 305.00)  |  Distance: 5.83
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (251.00, 178.00, 230.00)  -->  Reference: (254.00, 173.00, 229.00)  |  Distance: 5.92
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (607.00, 981.00, 351.00)  -->  Reference: (609.00, 977.00, 347.00)  |  Distance: 6.00
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (493.00, 956.00, 282.00)  -->  Reference: (488.00, 959.00, 280.00)  |  Distance: 6.16
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (188.00, 906.00, 287.00)  -->  Reference: (185.00, 904.00, 282.00)  |  Distance: 6.16
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (606.00, 650.00, 260.00)  -->  Reference: (610.00, 650.00, 255.00)  |  Distance: 6.40
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (535.00, 367.00, 229.00)  -->  Reference: (539.00, 363.00, 226.00)  |  Distance: 6.40
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (351.00, 484.00, 279.00)  -->  Reference: (356.00, 488.00, 279.00)  |  Distance: 6.40
+--> Good.  :))))
+Segmentation present, 1 true filament
+
+Predicted: (158.00, 799.00, 254.00)  -->  Reference: (163.00, 803.00, 254.00)  |  Distance: 6.40
+--> Good.  :))))
+Segmentation present, 1 true filament
+
+Predicted: (608.00, 920.00, 319.00)  -->  Reference: (607.00, 924.00, 314.00)  |  Distance: 6.48
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (419.00, 925.00, 253.00)  -->  Reference: (414.00, 921.00, 254.00)  |  Distance: 6.48
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (881.00, 613.00, 286.00)  -->  Reference: (886.00, 610.00, 283.00)  |  Distance: 6.56
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (118.00, 912.00, 277.00)  -->  Reference: (115.00, 915.00, 272.00)  |  Distance: 6.56
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (298.00, 559.00, 275.00)  -->  Reference: (300.00, 553.00, 277.00)  |  Distance: 6.63
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (675.00, 400.00, 221.00)  -->  Reference: (677.00, 396.00, 216.00)  |  Distance: 6.71
+--> Good.  -> but not completely sure about this one, why the reference is at no segmentation and density?
+pretty sure the wrong filament has been labeled, because the template matched branch is not connected to the mother by segmentation, so no way to correctly find it
+Segmentation present, 1 true filament
+
+Predicted: (764.00, 749.00, 325.00)  -->  Reference: (770.00, 752.00, 325.00)  |  Distance: 6.71
+--> Good.  :))))
+Segmentation present, 1 true filament
+
+Predicted: (137.00, 563.00, 244.00)  -->  Reference: (137.00, 566.00, 238.00)  |  Distance: 6.71
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (581.00, 767.00, 266.00)  -->  Reference: (579.00, 761.00, 263.00)  |  Distance: 7.00
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (123.00, 425.00, 205.00)  -->  Reference: (127.00, 430.00, 208.00)  |  Distance: 7.07
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (397.00, 116.00, 205.00)  -->  Reference: (396.00, 121.00, 210.00)  |  Distance: 7.14
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (344.00, 531.00, 291.00)  -->  Reference: (344.00, 529.00, 298.00)  |  Distance: 7.28
+--> Good.  -> but not completely sure about this one, why the reference is at no segmentation and density?
+Segmentation present, 1 true filament.. which is then immediately connected to another
+
+Predicted: (559.00, 957.00, 305.00)  -->  Reference: (557.00, 957.00, 298.00)  |  Distance: 7.28
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (360.00, 894.00, 258.00)  -->  Reference: (353.00, 893.00, 260.00)  |  Distance: 7.35
+--> honestly, not sure...
+
+Predicted: (104.00, 711.00, 253.00)  -->  Reference: (99.00, 705.00, 251.00)  |  Distance: 8.06
+--> Good.
+Segmentation present, 1 true filament
+
+Predicted: (492.00, 160.00, 219.00)  -->  Reference: (486.00, 168.00, 217.00)  |  Distance: 10.20
+--> honestly.. not sure.. as if it connects two filaments and not a branching event...
+
+Predicted: (516.00, 79.00, 212.00)  -->  Reference: (523.00, 85.00, 206.00)  |  Distance: 11.00
+--> honestly.. not sure.. as if it connects two filaments and not a branching event...
+seems like the template matching is labeling another intersection, but it isn't segmented.. well?
+
+Predicted: (637.00, 513.00, 236.00)  -->  Reference: (638.00, 504.00, 247.00)  |  Distance: 14.25
+--> NO, DIFFERENT ONES!!!!!!!!!!!!!!!!!!!!!!!
+difference too big
+2 independent ones that have been connected by morphological closing...
+
+Predicted: (974.00, 270.00, 205.00)  -->  Reference: (988.00, 274.00, 209.00)  |  Distance: 15.10
+--> Also believe to be a different one... the shift is way too the side... 
+
+Predicted: (556.00, 398.00, 183.00)  -->  Reference: (554.00, 405.00, 197.00)  |  Distance: 15.78
+--> also different...
+
+Predicted: (802.00, 306.00, 206.00)  -->  Reference: (801.00, 311.00, 221.00)  |  Distance: 15.84
+--> again two different filaments that pass by very close to each other were connected
+this artificial connection resulted in an intersection;
+the template match pick was on another filament
+
+Predicted: (712.00, 507.00, 237.00)  -->  Reference: (715.00, 501.00, 252.00)  |  Distance: 16.43
+--> again an artificial connection within two independent filaments...
+they just have 1 voxel gap between their segmentations (labeled regions)
+template match is a lot later on a different intersection
+
+Predicted: (124.00, 925.00, 313.00)  -->  Reference: (132.00, 913.00, 321.00)  |  Distance: 16.49
+--> No, completely different; template match pick is on an unsegmented part
+
+Predicted: (520.00, 262.00, 222.00)  -->  Reference: (512.00, 277.00, 220.00)  |  Distance: 17.12
+--> template match pick is near, but at an unsegmented region
+
+Predicted: (461.00, 120.00, 177.00)  -->  Reference: (475.00, 121.00, 167.00)  |  Distance: 17.23
+--> again different region, not a match
+
+Predicted: (27.00, 862.00, 352.00)  -->  Reference: (24.00, 852.00, 338.00)  |  Distance: 17.46
+--> not sure, but probably not
+
+Predicted: (445.00, 667.00, 300.00)  -->  Reference: (453.00, 654.00, 309.00)  |  Distance: 17.72
+--> completely different...
+
+Predicted: (637.00, 959.00, 341.00)  -->  Reference: (642.00, 975.00, 347.00)  |  Distance: 17.80
+--> template match pick is on an unsegmented region; not a match
+
+Predicted: (156.00, 642.00, 232.00)  -->  Reference: (151.00, 626.00, 225.00)  |  Distance: 18.17
+--> completely different
+
+Predicted: (191.00, 721.00, 297.00)  -->  Reference: (207.00, 712.00, 295.00)  |  Distance: 18.47
+--> issue - segmentation hasn't connected two filaments an the intersection between them hasn't been detected
+not a real match... near each other by chance/luck
+
+Predicted: (34.00, 639.00, 261.00)  -->  Reference: (38.00, 621.00, 258.00)  |  Distance: 18.68
+--> different
+template match pick in an unsegmented region
+
+Predicted: (903.00, 549.00, 229.00)  -->  Reference: (907.00, 564.00, 218.00)  |  Distance: 19.03
+--> different
+template match pick in an unsegmented region
+
+Predicted: (551.00, 722.00, 238.00)  -->  Reference: (553.00, 704.00, 245.00)  |  Distance: 19.42
+--> different, but a strange case...
+
+Predicted: (457.00, 421.00, 210.00)  -->  Reference: (456.00, 440.00, 204.00)  |  Distance: 19.95
+--> different....
+
+
+###########################################################################################################
+########################## Ball Radius 1; angle tolerance 15; match threshold 20 ##########################
+########################################### Overall 48 TP matches #########################################
+###########################################################################################################
+
+
+Predicted: (280.00, 59.00, 188.00)  -->  Reference: (278.00, 61.00, 185.00)  |  Distance: 4.12
+--> present in above
+
+Predicted: (75.00, 86.00, 211.00)  -->  Reference: (78.00, 86.00, 208.00)  |  Distance: 4.24
+--> present
+
+Predicted: (641.00, 569.00, 223.00)  -->  Reference: (641.00, 573.00, 221.00)  |  Distance: 4.47
+--> present
+
+Predicted: (367.00, 465.00, 251.00)  -->  Reference: (370.00, 463.00, 248.00)  |  Distance: 4.69
+--> present
+
+Predicted: (251.00, 177.00, 229.00)  -->  Reference: (254.00, 173.00, 229.00)  |  Distance: 5.00
+--> present
+
+Predicted: (621.00, 136.00, 204.00)  -->  Reference: (622.00, 139.00, 200.00)  |  Distance: 5.10
+-->  da
+
+Predicted: (241.00, 137.00, 207.00)  -->  Reference: (238.00, 140.00, 204.00)  |  Distance: 5.20
+--> da
+
+Predicted: (634.00, 431.00, 271.00)  -->  Reference: (637.00, 435.00, 269.00)  |  Distance: 5.39
+--> da
+
+Predicted: (159.00, 799.00, 254.00)  -->  Reference: (163.00, 803.00, 254.00)  |  Distance: 5.66
+--> da
+
+Predicted: (715.00, 939.00, 307.00)  -->  Reference: (717.00, 934.00, 305.00)  |  Distance: 5.74
+--> da
+
+Predicted: (348.00, 391.00, 276.00)  -->  Reference: (349.00, 387.00, 272.00)  |  Distance: 5.74
+--> da
+
+Predicted: (718.00, 622.00, 308.00)  -->  Reference: (714.00, 619.00, 305.00)  |  Distance: 5.83
+--> da
+
+Predicted: (222.00, 255.00, 195.00)  -->  Reference: (219.00, 256.00, 190.00)  |  Distance: 5.92
+-->  EW TP NOT PRESENT IN ABOVE!!!!
+and is a true TP
+
+Predicted: (607.00, 981.00, 351.00)  -->  Reference: (609.00, 977.00, 347.00)  |  Distance: 6.00
+--> da
+
+Predicted: (298.00, 558.00, 274.00)  -->  Reference: (300.00, 553.00, 277.00)  |  Distance: 6.16
+--> da
+
+Predicted: (493.00, 956.00, 282.00)  -->  Reference: (488.00, 959.00, 280.00)  |  Distance: 6.16
+--> da 
+ 
+Predicted: (188.00, 906.00, 287.00)  -->  Reference: (185.00, 904.00, 282.00)  |  Distance: 6.16
+--> da
+
+Predicted: (351.00, 484.00, 279.00)  -->  Reference: (356.00, 488.00, 279.00)  |  Distance: 6.40
+--> da
+
+Predicted: (221.00, 711.00, 245.00)  -->  Reference: (223.00, 710.00, 239.00)  |  Distance: 6.40
+--> da
+
+Predicted: (608.00, 920.00, 319.00)  -->  Reference: (607.00, 924.00, 314.00)  |  Distance: 6.48
+--> da
+
+Predicted: (419.00, 925.00, 253.00)  -->  Reference: (414.00, 921.00, 254.00)  |  Distance: 6.48
+--> da 
+
+Predicted: (881.00, 613.00, 286.00)  -->  Reference: (886.00, 610.00, 283.00)  |  Distance: 6.56
+--> da
+
+Predicted: (118.00, 912.00, 277.00)  -->  Reference: (115.00, 915.00, 272.00)  |  Distance: 6.56
+--> da
+
+Predicted: (901.00, 587.00, 208.00)  -->  Reference: (903.00, 593.00, 210.00)  |  Distance: 6.63
+--> da
+
+Predicted: (985.00, 274.00, 215.00)  -->  Reference: (988.00, 274.00, 209.00)  |  Distance: 6.71
+--> also in above, but this one is a lot closer and correct, compared to the top pick
+
+Predicted: (764.00, 749.00, 325.00)  -->  Reference: (770.00, 752.00, 325.00)  |  Distance: 6.71
+--> da
+
+Predicted: (137.00, 563.00, 244.00)  -->  Reference: (137.00, 566.00, 238.00)  |  Distance: 6.71
+--> da
+
+Predicted: (123.00, 425.00, 205.00)  -->  Reference: (127.00, 430.00, 208.00)  |  Distance: 7.07
+--> da
+
+Predicted: (559.00, 957.00, 305.00)  -->  Reference: (557.00, 957.00, 298.00)  |  Distance: 7.28
+--> da
+
+Predicted: (344.00, 531.00, 291.00)  -->  Reference: (344.00, 529.00, 298.00)  |  Distance: 7.28
+--> the exact same pick present above, skeptical of how good and correct it is
+
+Predicted: (675.00, 400.00, 222.00)  -->  Reference: (677.00, 396.00, 216.00)  |  Distance: 7.48
+-->the exact same pick present above, skeptical of how good and correct it is
+
+Predicted: (641.00, 506.00, 254.00)  -->  Reference: (638.00, 504.00, 247.00)  |  Distance: 7.87
+--> the wrong one is present above; this one is correctly found
+
+Predicted: (520.00, 78.00, 204.00)  -->  Reference: (523.00, 85.00, 206.00)  |  Distance: 7.87
+--> the wrong one is present above; this one is correctly found
+
+Predicted: (104.00, 711.00, 253.00)  -->  Reference: (99.00, 705.00, 251.00)  |  Distance: 8.06
+--> da
+
+Predicted: (492.00, 160.00, 219.00)  -->  Reference: (486.00, 168.00, 217.00)  |  Distance: 10.20
+--> da above; again not sure
+
+Predicted: (464.00, 121.00, 169.00)  -->  Reference: (475.00, 121.00, 167.00)  |  Distance: 11.18
+--> present also above, not sure if this one is the correct though
+
+Predicted: (288.00, 96.00, 225.00)  -->  Reference: (276.00, 90.00, 231.00)  |  Distance: 14.70
+--> not present above; don't think it is correct
+
+Predicted: (245.00, 822.00, 337.00)  -->  Reference: (240.00, 810.00, 330.00)  |  Distance: 14.76
+--> not present above; don't think it is correct
+
+Predicted: (124.00, 925.00, 313.00)  -->  Reference: (132.00, 913.00, 321.00)  |  Distance: 16.49
+--> da, both incorrect
+
+Predicted: (147.00, 444.00, 273.00)  -->  Reference: (143.00, 428.00, 271.00)  |  Distance: 16.61
+--> not present above; the predicted intersection is not the same at the template-matched one
+but there is also no segmentation on the template-matched intersection... 
+couldn't really be found
+
+Predicted: (638.00, 960.00, 341.00)  -->  Reference: (642.00, 975.00, 347.00)  |  Distance: 16.64
+--> found above; template match pick is on an unsegmented region; not a match
+
+Predicted: (712.00, 506.00, 236.00)  -->  Reference: (715.00, 501.00, 252.00)  |  Distance: 17.03
+--> also present above; not a match
+
+Predicted: (520.00, 262.00, 221.00)  -->  Reference: (512.00, 277.00, 220.00)  |  Distance: 17.03
+--> present above; template match pick is near, but at an unsegmented region
+
+Predicted: (155.00, 641.00, 232.00)  -->  Reference: (151.00, 626.00, 225.00)  |  Distance: 17.03
+-->  present above, completely different
+
+Predicted: (191.00, 721.00, 297.00)  -->  Reference: (207.00, 712.00, 295.00)  |  Distance: 18.47
+--> same above
+
+Predicted: (442.00, 270.00, 195.00)  -->  Reference: (429.00, 272.00, 182.00)  |  Distance: 18.49
+--> not present above but still not correct. 
+
+Predicted: (444.00, 668.00, 300.00)  -->  Reference: (453.00, 654.00, 309.00)  |  Distance: 18.92
+--> almost identical to above
+
+Predicted: (551.00, 722.00, 238.00)  -->  Reference: (553.00, 704.00, 245.00)  |  Distance: 19.42
+--> same as above
+
+
+
+###########################################################################################################
+############################ No Closing; angle tolerance 15; match threshold 20 ###########################
+########################################### Overall 41 TP matches #########################################
+###########################################################################################################
+
+Predicted: (280.00, 59.00, 188.00)  -->  Reference: (278.00, 61.00, 185.00)  |  Distance: 4.12
+--> da in both
+
+Predicted: (75.00, 86.00, 211.00)  -->  Reference: (78.00, 86.00, 208.00)  |  Distance: 4.24
+--> da in both
+
+Predicted: (641.00, 569.00, 223.00)  -->  Reference: (641.00, 573.00, 221.00)  |  Distance: 4.47
+--> da in both
+
+Predicted: (367.00, 465.00, 251.00)  -->  Reference: (370.00, 463.00, 248.00)  |  Distance: 4.69
+--> da in both
+
+Predicted: (251.00, 177.00, 229.00)  -->  Reference: (254.00, 173.00, 229.00)  |  Distance: 5.00
+--> da in both
+
+Predicted: (621.00, 136.00, 204.00)  -->  Reference: (622.00, 139.00, 200.00)  |  Distance: 5.10
+--> da in both
+
+Predicted: (241.00, 137.00, 207.00)  -->  Reference: (238.00, 140.00, 204.00)  |  Distance: 5.20
+--> da in both
+
+Predicted: (634.00, 431.00, 271.00)  -->  Reference: (637.00, 435.00, 269.00)  |  Distance: 5.39
+--> da in both
+
+Predicted: (159.00, 799.00, 254.00)  -->  Reference: (163.00, 803.00, 254.00)  |  Distance: 5.66
+--> da in both
+
+Predicted: (715.00, 939.00, 307.00)  -->  Reference: (717.00, 934.00, 305.00)  |  Distance: 5.74
+--> da in both
+
+Predicted: (348.00, 391.00, 276.00)  -->  Reference: (349.00, 387.00, 272.00)  |  Distance: 5.74
+--> da in both
+
+Predicted: (222.00, 255.00, 195.00)  -->  Reference: (219.00, 256.00, 190.00)  |  Distance: 5.92
+--> present only in radius 1 and here
+
+Predicted: (607.00, 981.00, 351.00)  -->  Reference: (609.00, 977.00, 347.00)  |  Distance: 6.00
+--> da in both
+
+Predicted: (188.00, 906.00, 287.00)  -->  Reference: (185.00, 904.00, 282.00)  |  Distance: 6.16
+--> da in both
+
+Predicted: (351.00, 484.00, 279.00)  -->  Reference: (356.00, 488.00, 279.00)  |  Distance: 6.40
+--> da in both
+
+Predicted: (221.00, 711.00, 245.00)  -->  Reference: (223.00, 710.00, 239.00)  |  Distance: 6.40
+--> da in both
+
+Predicted: (608.00, 920.00, 319.00)  -->  Reference: (607.00, 924.00, 314.00)  |  Distance: 6.48
+--> da in both
+
+Predicted: (419.00, 925.00, 253.00)  -->  Reference: (414.00, 921.00, 254.00)  |  Distance: 6.48
+--> da in both
+
+Predicted: (881.00, 613.00, 286.00)  -->  Reference: (886.00, 610.00, 283.00)  |  Distance: 6.56
+--> da in both
+
+Predicted: (118.00, 912.00, 277.00)  -->  Reference: (115.00, 915.00, 272.00)  |  Distance: 6.56
+--> da in both
+
+Predicted: (298.00, 559.00, 275.00)  -->  Reference: (300.00, 553.00, 277.00)  |  Distance: 6.63
+--> da in both
+
+Predicted: (901.00, 587.00, 208.00)  -->  Reference: (903.00, 593.00, 210.00)  |  Distance: 6.63
+--> da in both
+
+Predicted: (985.00, 274.00, 215.00)  -->  Reference: (988.00, 274.00, 209.00)  |  Distance: 6.71
+--> da in both
+
+Predicted: (764.00, 749.00, 325.00)  -->  Reference: (770.00, 752.00, 325.00)  |  Distance: 6.71
+--> da in both
+
+Predicted: (137.00, 563.00, 244.00)  -->  Reference: (137.00, 566.00, 238.00)  |  Distance: 6.71
+--> da in both
+
+Predicted: (123.00, 425.00, 205.00)  -->  Reference: (127.00, 430.00, 208.00)  |  Distance: 7.07
+--> da in both
+
+Predicted: (559.00, 957.00, 305.00)  -->  Reference: (557.00, 957.00, 298.00)  |  Distance: 7.28
+--> da in both
+
+Predicted: (641.00, 506.00, 254.00)  -->  Reference: (638.00, 504.00, 247.00)  |  Distance: 7.87
+--> da in both, took the correct one also in radius 1
+
+Predicted: (104.00, 711.00, 253.00)  -->  Reference: (99.00, 705.00, 251.00)  |  Distance: 8.06
+--> da in both
+
+Predicted: (235.00, 671.00, 275.00)  -->  Reference: (235.00, 672.00, 266.00)  |  Distance: 9.06
+--> not in any above, not sure if correct
+
+Predicted: (492.00, 160.00, 219.00)  -->  Reference: (486.00, 168.00, 217.00)  |  Distance: 10.20
+--> da in both, in all not sure
+
+Predicted: (464.00, 121.00, 169.00)  -->  Reference: (475.00, 121.00, 167.00)  |  Distance: 11.18
+--> present in both, not correct though
+
+Predicted: (124.00, 925.00, 321.00)  -->  Reference: (132.00, 913.00, 321.00)  |  Distance: 14.42
+--> present in both, all incorrect
+
+Predicted: (245.00, 822.00, 337.00)  -->  Reference: (240.00, 810.00, 330.00)  |  Distance: 14.76
+--> present only here and in radius 1
+
+Predicted: (908.00, 362.00, 242.00)  -->  Reference: (913.00, 350.00, 250.00)  |  Distance: 15.26
+--> not present; in different filaments
+
+Predicted: (147.00, 444.00, 273.00)  -->  Reference: (143.00, 428.00, 271.00)  |  Distance: 16.61
+--> present only here and in radius 1
+
+Predicted: (638.00, 960.00, 341.00)  -->  Reference: (642.00, 975.00, 347.00)  |  Distance: 16.64
+--> present in both
+
+Predicted: (155.00, 641.00, 232.00)  -->  Reference: (151.00, 626.00, 225.00)  |  Distance: 17.03
+--> present in both
+
+Predicted: (191.00, 721.00, 297.00)  -->  Reference: (207.00, 712.00, 295.00)  |  Distance: 18.47
+--> present in both
+
+Predicted: (442.00, 270.00, 195.00)  -->  Reference: (429.00, 272.00, 182.00)  |  Distance: 18.49
+--> present here and in radius 1; all incorrect
+
+Predicted: (551.00, 722.00, 238.00)  -->  Reference: (553.00, 704.00, 245.00)  |  Distance: 19.42
+--> present in all
+ 

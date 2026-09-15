@@ -1,0 +1,117 @@
+Discussion: 
+
+
+
+Results: 
+###########################################################################################################
+########################## Ball Radius 2; angle tolerance 15; match threshold 20 ##########################
+############################################## Overall 185 FN #############################################
+###########################################################################################################
+Reasons why they weren't found + counter:
+
+
+-> absolutely no segmentation around tm-pick
+(147, 454, 37)
+(163, 911, 107)
+(175, 376, 26)
+(190, 1000, 568)
+(204, 250, 841)
+(bottom two on 220 - (220, 323, 585), (220, 101, 676))
+(297, 520, 782)
+(300, 183, 566)
+30
+
+-> 1 line starting near tm-pick
+(147, 79, 64)
+(150, 58, 104)
+(162, 539, 211)
+(169, 165, 94)
+(191, 625, 195)
+(255, 424, 814) - very far from pick; almost has no segmentation
+(311, 591, 767)
+(313, 625, 864)
+14
+
+-> No intersection on the segmentation (tm-pick near a straight line on segmentation) or maybe segmentation of branch is missing
+(132, 138, 83)
+(156, 639, 104)
+(164, 547, 60)
+(175, 819, 131)
+(192, 529, 303) - at the end of a line without an intersection [1]
+(195, 979, 195)
+(200, 876, 187)
+(205, 37, 495) - line appears after tm-pick
+(206, 180, 755) - line without any intersections and a tm-pick is right in the middle of it
+(212, 71, 621) - line without any intersections and a tm-pick is right in the middle of it
+(219, 389, 289) - even branch can be seen, but no segmentation
+62
+
+-> a combination of no segmentation and being near the end of a segmented filament
+(199, 876, 187)
+(202, 842, 142)
+(209, 422, 75)
+(216, 309, 462)
+(218, 143, 50)
+(229, 443, 757)
+(261, 325, 594) - odd
+(330, 408, 910)
+28
+
+[often a branch can be seen coming off from it...]
+
+-> branch and mother not connected and tm-pick is exactly in this gap
+(also branch ends.. gap... mother filament OR a segmentation triangle without the continuation of the mother filament...)  
+(147, 223, 57)
+(155, 949, 187)
+(162, 175, 265)
+(212, 360, 46)
+(225, 636, 493)
+(231, 274, 92) - very far from intersection starts the segmentation
+(234, 379, 890) - very far from intersection starts the segmentation
+(245, 544, 312) - very far from intersection starts the segmentation
+(249, 94, 865) - very far from intersection starts the segmentation
+(294, 720, 752)
+(309, 494, 627)
+(330, 239, 810)
+19
+
+-> not enough segmentation of mother filament (too short) and probably filtered out
+(173, 902, 331)
+(190, 219, 254) - due to the sub-filament logic
+(211, 484, 408)
+(240, 518, 406)
+(252, 990, 828)
+(295, 154, 529)
+(316, 199, 761)
+7
+
+-> a strange case
+(192, 161, 27)
+(252, 992, 494)
+(292, 785, 723)
+(310, 924, 906)
+
+1 I cannot explain (163, 820, 868)
+
+-> maybe can be found if angle tolerance is bigger? 
+(203, 657, 151)
+(222, 180, 51)
+(228, 78, 206)
+(238, 158, 839)
+(260, 443, 704)
+(306, 978, 912)
+(309, 164, 691) - idk why not tbh
+7
+
+-> maybe a filament is missing? 
+(226, 926, 528)
+(231, 395, 619)
+(241, 208, 646)
+(299, 583, 623)
+(303, 64, 500)
+5
+
+-> another filament passes very near and becomes a 4-intersection
+(272, 472, 589)
+
+-----------> create a pie chart with those 
