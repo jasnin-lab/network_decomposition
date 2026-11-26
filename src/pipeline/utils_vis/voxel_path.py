@@ -81,33 +81,29 @@ class VoxelPath:
 
     def set_avg_direction(self, start_pos: tuple, lower_limit: int, upper_limit: int):
         # Edge case: Filament is just 1 voxel (no direction)
-        if self.size < 2:
-            return np.array([0.0, 0.0, 0.0])
-
-        if self.size < lower_limit:
-            # if the whole filament is shorter than lower_limit, ignore it
-            # print("Too small, None")
+        if len(self.data) < 2 or len(self.data) <= lower_limit:
+            self.direction = None
             return None
 
-        # Get voxels from index lower_limit up to upper_limit (inclusive)
-        if np.linalg.norm(np.array(start_pos) - self.data[0]) > \
-                np.linalg.norm(np.array(start_pos) - self.data[-1]):
-            # Reverse the coordinates
+        # Orient voxels starting from start_pos
+        start_arr = np.asarray(start_pos)
+        if np.linalg.norm(start_arr - self.data[0]) > np.linalg.norm(start_arr - self.data[-1]):
             target_voxels = self.data[::-1][lower_limit:(upper_limit + 1)]
         else:
             target_voxels = self.data[lower_limit:(upper_limit + 1)]
 
-        # Calculate all vectors instantly
-        vectors = target_voxels - start_pos
+        # Safety guard (also catches upper_limit < lower_limit)
+        if len(target_voxels) == 0:
+            self.direction = None
+            return None
 
-        # Average them along the columns (axis=0)
+        vectors = target_voxels - start_arr
         avg_vector = np.mean(vectors, axis=0)
 
-        # Normalize
         magnitude = np.linalg.norm(avg_vector)
         if magnitude == 0:
-            self.direction = avg_vector
-            return avg_vector  # Avoid dividing by 0
+            self.direction = None
+            return None
 
-        self.direction = avg_vector/magnitude
-        return avg_vector/magnitude
+        self.direction = avg_vector / magnitude
+        return self.direction

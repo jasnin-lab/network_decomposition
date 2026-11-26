@@ -1,5 +1,11 @@
-import pickle, argparse
+import sys, pickle, argparse
+from pathlib import Path
 import pandas as pd
+
+# Resolves dynamically to .../network_decomposition
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from filepath_transformer import *
 from src.pipeline.properties_computation.angles_at_intersections import *
@@ -29,10 +35,10 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    graph_input = transform_filepath(args.input, DEFAULT_INPUT_PATH, must_exist=True)
-    original_input_mask = transform_filepath(args.input_mask, DEFAULT_INPUT_PATH, must_exist=False)
-    output_mask_filepath = transform_filepath(args.output_mask_filepath, DEFAULT_INPUT_PATH, must_exist=False)
-    # take the name of the file and add _degree.png OR _subfil_len.png
+    graph_input = transform_filepath(args.input, DEFAULT_GRAPH_PATH, must_exist=True)
+    original_input_mask = transform_filepath(args.input_mask, DEFAULT_INPUT_PATH, must_exist=True)
+    output_mask_filepath = transform_filepath(args.output_mask_filepath, DEFAULT_MASK_PATH, must_exist=False)
+    # Take the name of the file and add '_degree.png' OR '_subfil_len.png'
     general_plot_path = DEFAULT_PLOT_PATH / Path(graph_input).stem
 
     nii = True if original_input_mask.endswith(".nii") else False
@@ -66,7 +72,7 @@ if __name__ == "__main__":
                         radius=int(args.radius) if args.radius is not None else None)
 
     # Collect subfilament lengths and intersection degrees for plotting
-    all_fil_lengths = []  # ToDo: NOT CORRECT!!! - here only filaments at intersections; but there are filaments at start positions and not going to an intersection
+    all_fil_lengths = []
     all_intersection_degrees = []
     fil_check = set()
     for node, attr in graph_representation.nodes(data=True):
@@ -82,11 +88,11 @@ if __name__ == "__main__":
                     all_fil_lengths.append(graph_representation.graph["filament_paths"][fil].length())
                     fil_check.add(fil)
         else:
-            if attr.get("fil_num") not in fil_check:
+            if attr.get("fil_num") not in fil_check and attr.get("fil_num") is not None:
                 all_fil_lengths.append(graph_representation.graph["filament_paths"][attr.get("fil_num")].length())
                 fil_check.add(attr.get("fil_num"))
 
-    # plot
+    # Plot
     # --> intersection degree
     plot_len_degree(all_intersection_degrees, "Distribution of Intersection Degrees",
                     f"{general_plot_path}_degrees.png", "Degree")
@@ -95,7 +101,7 @@ if __name__ == "__main__":
     plot_len_degree(all_fil_lengths, "Distribution of Subfilament Lengths",
                     f"{general_plot_path}_subfil_len.png", "Length in Voxels")
 
-    # use pandas to print on the console basic statistics
+    # Use pandas to print on the console basic statistics
     print(f"Basic statistics about the degree of all intersections: \n{pd.Series(all_intersection_degrees).describe()}")
     print(f"Basic statistics about all subfilament lengths in voxels: \n{pd.Series(all_fil_lengths).describe()}")
 

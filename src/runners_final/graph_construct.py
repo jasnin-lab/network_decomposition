@@ -1,8 +1,13 @@
-import argparse
-import pickle
+import sys, argparse, pickle, nrrd
+import nibabel as nib
 from pathlib import Path
 from skimage import morphology
 from typing import Optional, Tuple
+
+# Resolves dynamically to .../network_decomposition
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.pipeline.graph_constructor import *
 from src.pipeline.mask_processing import *

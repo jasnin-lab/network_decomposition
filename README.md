@@ -10,7 +10,7 @@ A two-stage Python command-line pipeline for converting 3D binary segmentation m
 ## Requirements
 
 * Python 3.8+
-* Core packages: `numpy`, `pandas`, `nibabel`, `pynrrd`, `scikit-image`, `matplotlib`, `networkx`
+* Core packages: `numpy`, `pandas`, `nibabel`, `pynrrd`, `scikit-image`, `matplotlib`, `networkx`, `pyvis`
 
 ```bash
 pip install numpy pandas nibabel pynrrd scikit-image matplotlib networkx
@@ -153,9 +153,9 @@ python compute_properties.py \
 Run both stages back-to-back on a single segmentation mask:
 
 ```bash
-# 1. Build the graph and HTML visualization from a segmentation mask
-python graph_construct.py -i actin.nrrd -o actin_graph -oh actin_vis.html -cr 3
+# 1. Build the graph and HTML visualization from a segmentation mask ('-cr 3' is an optional argument)
+python graph_construct.py -i "actin_t_cell.nrrd" -o "graph_actin_t_cell" -oh "actin_t_cell.html" -cr 3
 
-# 2. Detect Arp2/3 intersections, export the picks mask, and plot statistics
-python compute_properties.py -i actin_graph.pkl -im actin.nrrd -m actin_picks.nrrd -t 20 -ll 10 -ul 35 -r 3
+# 2. Detect Arp2/3 intersections, export the picks mask, and plot statistics ('-t 20 -ll 10 -ul 35 -r 3' are optional arguments)
+python compute_properties.py -i "actin_graph.pkl" -im "actin.nrrd" -m "actin_t_cell.nrrd" -t 20 -ll 10 -ul 35 -r 3
 ```

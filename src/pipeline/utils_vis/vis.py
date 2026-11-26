@@ -4,12 +4,12 @@ napari or visualization methods..
 
 - should store nrrd or mrc be specific to the step or not?
 """
-import math, matplotlib, napari, pyvis, os, nrrd, mrcfile
+import math, matplotlib, os, pyvis, nrrd
 import numpy as np
 import nibabel as nib
 import networkx as nx
-import matplotlib.pyplot as plt
 from pyvis.network import Network
+import matplotlib.pyplot as plt
 from jinja2 import Environment, FileSystemLoader
 matplotlib.use('TkAgg')  # or 'QtAgg'  # otherwise an error when plotting each slice
 
@@ -39,72 +39,6 @@ def show_all_slices(volume):
 
     plt.tight_layout()
     plt.show()
-
-
-def view_in_napari(colors=None, point_sizes=None, **kwargs):
-    """
-    Generalize a napari visualization.
-    Kwargs should be dictionaries (one for each layer) mapping layer names to data:
-    image={"vol": vol_array, "skel": skel_array}
-    """
-    viewer = napari.Viewer()
-    colors = colors or []
-    point_sizes = point_sizes or []
-
-    color_idx = 0
-    size_idx = 0
-
-    for layer_type in ["image", "labels", "points"]:
-        if layer_type not in kwargs:
-            continue
-
-        layer_data = kwargs[layer_type]
-
-        # If a list is passed instead of a dict, auto-generate safe names
-        if isinstance(layer_data, list):
-            layer_data = {f"{layer_type}_{i}": arr for i, arr in enumerate(layer_data)}
-
-        for var_name, val in layer_data.items():
-            layer_props = {"name": var_name}
-
-            # Add Color
-            if color_idx < len(colors) and colors[color_idx] is not None:
-                if layer_type == "points":
-                    layer_props["face_color"] = colors[color_idx]
-                else:
-                    layer_props["colormap"] = colors[color_idx]
-
-            # Add Size (Points only)
-            if layer_type == "points" and size_idx < len(point_sizes):
-                layer_props["size"] = point_sizes[size_idx]
-                size_idx += 1
-
-            # Transformation from XYZ to ZYX - necessary as Napari expects data in (Z, Y, X)
-            if layer_type in ["image", "labels"]:
-                # Transpose the 3D array: (X, Y, Z) -> (Z, Y, X)
-                display_val = np.transpose(val, (2, 1, 0))
-            elif layer_type == "points":
-                # Convert list/array to a numpy array first
-                points_arr = np.array(val)
-
-                # Check if the points array is empty to prevent slicing errors
-                if points_arr.size > 0:
-                    # Reverse the columns: [x, y, z] -> [z, y, x]
-                    display_val = points_arr[:, ::-1]
-                else:
-                    display_val = points_arr
-
-            # Add the layer
-            if layer_type == "image":
-                viewer.add_image(display_val, **layer_props)
-            elif layer_type == "labels":
-                viewer.add_labels(display_val, **layer_props)
-            elif layer_type == "points":
-                viewer.add_points(display_val, **layer_props)
-
-            color_idx += 1
-
-    napari.run()
 
 
 def html_vis(graph: nx.Graph, output_path: str):
@@ -297,9 +231,3 @@ def store_generated_volume(volume: np.ndarray, output_filepath: str, header: str
     except Exception as e:
         raise RuntimeError(f"Failed to save NRRD file: {e}")
 
-
-def store_skeleton_mrc(vol_skeleton: np.ndarray, output_filepath: str):
-    """ Store the array in an .mrc file """
-    with mrcfile.new(output_filepath, overwrite=True) as mrc:
-        # Convert ndarray from boolean to numeric and save
-        mrc.set_data(vol_skeleton.astype(np.int8))

@@ -11,7 +11,7 @@ This includes:
 Additionally, the rejected approach "Area-based" is also present
 """
 
-import nrrd, mrcfile, random, sys
+import nrrd, random, sys
 import numpy as np
 from scipy.spatial import KDTree
 from skimage.morphology import skeletonize

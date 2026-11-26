@@ -11,7 +11,7 @@ if SRC_DIR is None:
     raise FileNotFoundError("Could not locate the 'src' directory from this script.")
 
 DEFAULT_INPUT_PATH = SRC_DIR / "data/input"
-DEFAULT_OUTPUT_PATH = SRC_DIR / "data/graphs"
+DEFAULT_GRAPH_PATH = SRC_DIR / "data/graphs"
 DEFAULT_HTML_PATH = SRC_DIR / "data/html"
 DEFAULT_PLOT_PATH = SRC_DIR / "data/plots"
 DEFAULT_MASK_PATH = SRC_DIR / "data/mask"

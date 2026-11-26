@@ -3,7 +3,7 @@ Construct a graph (NetworkX) of the skeleton of the segmented volume
 Iterate through the whole skeleton and simultaneously define a homeomorphic graph,
 while storing geometrical information (voxel coordinates)
 """
-import sys, napari, time
+import sys, time
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
